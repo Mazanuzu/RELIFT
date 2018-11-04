@@ -1,0 +1,245 @@
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+  body {
+    max-width: 100%;
+  }
+
+  .main-menu div {
+    flex-direction: row;
+  }
+
+  .main-menu ul {
+    display: none;
+  }
+
+  .container {
+    width: 100%;
+    padding: 0 0;
+  }
+
+  .concept-image {
+    display: none;
+  }
+
+  .bg-image {
+    background-position: right 50% top 20%;
+  }
+
+  h1 {
+    font-size: 3rem;
+  }
+
+  h2 {
+    font-size: 2.5rem;
+  }
+
+  h3 {
+    font-size: 2rem;
+  }
+
+  .btt {
+    display: none;
+  }
+
+  .row {
+    flex-direction: column;
+  }
+
+  .advantages {
+    height: auto;
+    padding-bottom: 20px;
+  }
+
+  .social-networks {
+    flex-direction: row;
+  }
+
+  #footer .column>p {
+    text-align: center;
+  }
+
+  .hamburger {
+    display: block !important;
+  }
+}
+
+@media only screen and (min-device-width : 480px) and (max-device-width : 640px) {
+  body {
+    max-width: 100%;
+  }
+
+  .main-menu div {
+    flex-direction: row;
+  }
+
+  .main-menu ul {
+    display: none;
+  }
+
+  .container {
+    width: 100%;
+    padding: 0 0;
+  }
+
+  .concept-image {
+    display: none;
+  }
+
+  .bg-image {
+    background-position: right 50% top 20%;
+  }
+
+  h1 {
+    font-size: 3rem;
+  }
+
+  h2 {
+    font-size: 2.5rem;
+  }
+
+  h3 {
+    font-size: 2rem;
+  }
+
+  .btt {
+    display: none;
+  }
+
+  .row {
+    flex-direction: column;
+  }
+
+  .advantages {
+    height: auto;
+    padding-bottom: 20px;
+  }
+
+  .social-networks {
+    flex-direction: row;
+  }
+
+  #footer .column>p {
+    text-align: center;
+  }
+
+  .hamburger {
+    display: block !important;
+  }
+}
+/* iPads (portrait and landscape) ----------- */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+  body {
+    max-width: 100%;
+  }
+
+  .main-menu div {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .main-menu ul li {
+    padding: 5px 15px;
+  }
+
+  .main-menu div>div,.main-menu div>ul {
+    flex: 1;
+  }
+  .main-menu ul li a {
+    margin: 0 0;
+  }
+  .container {
+    width: 100%;
+    padding: 0 0;
+  }
+
+  .concept-image {
+    display: none;
+  }
+
+  .bg-image {
+    background-position: right 50% top 20%;
+  }
+
+  .btt {
+    display: none;
+  }
+
+  .row {
+    flex-direction: column;
+  }
+
+  .advantages {
+    height: auto;
+    padding-bottom: 20px;
+  }
+
+  .social-networks {
+    flex-direction: row;
+  }
+
+  #footer .column>p {
+    text-align: center;
+  }
+
+  }
+
+
+/* iPads (landscape) ----------- */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) {
+  body {
+    max-width: 100%;
+  }
+
+  .main-menu div {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .main-menu ul li {
+    padding: 5px 15px;
+  }
+
+  .main-menu div>div,.main-menu div>ul {
+    flex: 1;
+  }
+  .main-menu ul li a {
+    margin: 0 0;
+  }
+  .container {
+    width: 100%;
+    padding: 0 0;
+  }
+
+  .concept-image {
+    display: none;
+  }
+
+  .bg-image {
+    background-position: right 50% top 20%;
+  }
+
+  .btt {
+    display: none;
+  }
+
+  .row {
+    flex-direction: column;
+  }
+
+  .advantages {
+    height: auto;
+    padding-bottom: 20px;
+  }
+
+  .social-networks {
+    flex-direction: row;
+  }
+
+  #footer .column>p {
+    text-align: center;
+  }
+  .categories {
+    display: flex;
+    flex-flow: row wrap;
+  }
+  }

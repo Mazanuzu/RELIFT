@@ -1,0 +1,558 @@
+/* RESET CSS */
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* GENERAL */
+body {
+  min-height: 100%;
+  max-width: 100%;
+  position: relative;
+  font-family: 'Roboto', sans-serif;
+  color: #373737;
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Raleway', sans-serif;
+}
+
+a,
+a:visited {
+  text-decoration: none;
+  color: #373737;
+}
+
+a:hover {
+  transition: 0.4s;
+  opacity: 0.96;
+  color: #00C853;
+  cursor: pointer;
+}
+
+.container {
+  width: 1170px;
+  padding: 0px 15px;
+  margin: 0 auto;
+}
+
+h1 {
+  font-size: 7rem;
+  color: white;
+  font-weight: 600;
+  letter-spacing: -2px;
+  text-align: center;
+  text-shadow: rgba(0, 0, 0, 0.3) 2px 0px;
+}
+
+h2 {
+  text-align: center;
+  font-size: 4rem;
+  letter-spacing: -1.5px;
+  margin-bottom: 20px;
+}
+
+h3 {
+  font-size: 2rem;
+  letter-spacing: -1px;
+}
+
+h4 {
+  font-size: 1.5rem;
+}
+
+small {
+  font-size: 40%;
+}
+
+section {
+  margin: 20px 0px;
+}
+/* FLEX */
+.row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* BUTTONS */
+.cta,
+.cta:visited {
+  background-color: #009624;
+  color: white;
+  padding: 10px 50px;
+  font-size: 2rem;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+  border-radius: 5px;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.bg-image .cta:hover,
+.promo-band .cta:hover {
+  background-color: white;
+  color: #009624;
+}
+
+.add-cart {
+  text-align: center;
+  display: block;
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 10px 20px;
+  font-weight: 500;
+  font-size: 25px;
+}
+
+.add-cart:hover {
+  background-color: #00c853;
+  color: white;
+}
+
+.more-infos {
+  background-color: white;
+  font-size: 1.5em;
+  color: #009624;
+  text-align: center;
+  display: block;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-transform: uppercase;
+}
+
+.submit {
+  padding: 5px 15px;
+  font-weight: 400;
+  font-size: 18px;
+}
+
+.submit:hover {
+  transition: 0.4s;
+  opacity: 0.96;
+  background-color: #00C853;
+  cursor: pointer;
+}
+
+/* MENU */
+.main-menu {
+  background-color: white;
+  position: fixed;
+  top: 0;
+  z-index: 2;
+  width: 100%;
+  border: 1px grey solid;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+  transform: translateY(-2px);
+  padding: 10px 0px;
+}
+
+.main-menu ul {
+  justify-content: space-evenly;
+  text-transform: uppercase;
+}
+
+.main-menu ul li {
+  display: inline;
+  padding: 10px 40px;
+  list-style-type: none;
+}
+
+.main-menu ul a {
+  margin-left: 25px;
+  font-size: 1.5rem;
+}
+
+nav .row {
+  justify-content: space-evenly;
+}
+
+.material-icons {
+  font-size: 2rem !important;
+}
+
+.hamburger {
+  display: none !important;
+}
+
+/* HEADER */
+.bg-image {
+  position: relative;
+  height: 90vh;
+  background: url("../img/header2.png") no-repeat center center;
+  /* background-position: right 72% top 35%; */
+  opacity: 1;
+  width: 100%;
+  background-color: #373737;
+}
+
+/* CONCEPT */
+
+.concept-section section {
+  flex: 1;
+}
+
+.concept-text h2{
+  margin-top: 0;
+}
+
+.concept-text p{
+  font-size: 20px;
+  padding: 0px 10px;
+  line-height: 1.5;
+}
+
+.concept-image {
+  background: url("../img/concept2.jpg") center no-repeat;
+  height: 70vh
+}
+
+/* PRODUCTS */
+.products-row .product {
+  flex: 1;
+}
+
+.products-row .product:not(:last-child) {
+  margin-right: 20px;
+}
+
+.product header {
+  display: flex;
+  position: relative;
+  height: 40vh;
+}
+
+.product:nth-child(1) header {
+  background-image: url('../img/kettlebell.jpg');
+  background-position: center;
+}
+
+.product:nth-child(2) header {
+  background-image: url('../img/dumbbell.jpg');
+  background-position: center;
+}
+
+.product:nth-child(3) header {
+  background-image: url('../img/vegan-whey.jpg');
+  background-position: center;
+}
+
+.brand-price {
+  display: flex;
+  justify-content: space-between;
+}
+
+.price {
+  font-family: 'Raleway'sans-serif;
+  font-weight: 600;
+}
+
+.product-brand {
+  font-size: 32px;
+}
+
+.price {
+  font-size: 28px;
+}
+
+.product-body {
+  padding: 8px 12px;
+}
+
+.product-description {
+  font-size: 1.5rem;
+}
+
+.product:hover {
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+  border-radius: 5px;
+}
+
+.product header a.fav {
+  font-size: 34px;
+  position: absolute;
+  top: 2px;
+  right: 12px;
+  color: #009624;
+}
+
+.far+.fa-heart {
+  display: none;
+}
+
+.fav:hover .fas {
+  display: block;
+}
+
+.fav:hover .far {
+  display: none;
+}
+
+/* PROMOTION */
+.promo-band {
+  background: url("../img/promo.jpg") no-repeat center center;
+  height: 60vh;
+  width: 100%;
+  color: white;
+}
+
+.promo-band h2 {
+  text-shadow: #373737 2px 1px;
+  font-weight: 500;
+}
+/* ADVANTAGES */
+.advantages-list .container {
+  text-align: center;
+}
+
+.advantages-list h3{
+  font-size: 2.5rem;
+}
+
+.advantages-list i{
+  font-size: 40px;
+  color: #009624;
+}
+
+.advantages-list p {
+  font-size: 1.5rem;
+}
+
+.advantages {
+  flex: 1;
+  height: 20vh;
+}
+
+/* FOOTER */
+#footer {
+  background-color: #373737;
+  width: 100%;
+  color: white;
+  margin-top: 10px;
+}
+
+#footer .column>p {
+  font-size: 18px;
+}
+
+#footer div, #footer form {
+  flex: 1;
+  padding-top: 10px;
+}
+
+#footer ul li a,
+#footer ul li a:visited {
+  text-decoration: none;
+  color: white;
+}
+
+#footer ul li a:hover {
+  transition: 0.4s;
+  opacity: 0.96;
+  color: #00C853;
+  cursor: pointer;
+}
+
+/* SOCIAL NETWORKS */
+
+.social-networks {
+  padding-top: 15px;
+}
+
+.social-icon {
+  color: white;
+  font-size: 30px;
+  padding-right:10px;
+}
+
+.fa-facebook-square:hover {
+  color: #3b5999;
+}
+
+.fa-twitter-square:hover {
+  color: #55acee;
+}
+
+.fa-reddit-square:hover {
+  color: #ff5700;
+}
+
+.fa-pinterest-square:hover {
+  color: #bd081c;
+}
+
+.fa-instagram:hover {
+  color: #e4405f;
+}
+
+/* CONTACT FORM */
+
+legend {
+  font-size: 20px;
+}
+
+input, textarea {
+  border-radius: 5px;
+}
+
+input:focus, textarea:focus{
+  border: 1px #009624 solid;
+  outline-color: #009624;
+}
+
+textarea {
+  resize: none;
+}
+
+
+/* BACK TO TOP */
+
+.back-to-top {
+  position: fixed;
+  bottom: 30px;
+  right : 50px;
+  z-index: 3;
+  color: white;
+  font-size: 4rem !important;
+  background-color: #009624;
+  border-radius: 50px;
+}
